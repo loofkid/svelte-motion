@@ -111,7 +111,7 @@ export interface AnimationProps {
      * <MotionDiv animate={animation} />
      * ```
      */
-    animate?: AnimationControls | TargetAndTransition | VariantLabels | boolean;
+    animate?: AnimationControls | TargetAndTransition | VariantLabels | boolean | {[key: string]: `${number}rem` | `${number}px` | `${number}%` | `${number}em` | `${number}vw` | `${number}vh` | `${number}pt`};
     /**
      * A target to animate to when this component is removed from the tree.
      *
